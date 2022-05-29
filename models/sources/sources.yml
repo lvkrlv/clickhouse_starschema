@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+
+    - name: ssb-dbgen
+      # database: db
+      schema: db1
+      tags: ["ssb-dbgen"]      
+      loader: S3
+      description: "External tables"
+
+      tables:
+
+        - name: customer
+          description: "Customers source in S3 bucket"
+          identifier: src_customer
+
+        - name: lineorder
+          description: "Lineorder source in S3 bucket"
+          identifier: src_lineorder
+
+        - name: part
+          description: "Part source in S3 bucket"
+          identifier: src_part
+
+        - name: supplier
+          description: "Supplier source in S3 bucket"
+          identifier: src_supplier

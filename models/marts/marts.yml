@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: pivoted
+    description: ""
+    columns:
+      - name: month
+        description: ""
+
+      - name: supplier_region
+        description: ""
+
+      - name: asia_customers_rev
+        description: ""
+
+      - name: america_customers_rev
+        description: ""
+
+      - name: europe_customers_rev
+        description: ""
+
+      - name: africa_customers_rev
+        description: ""
+
+      - name: 'middle east_customers_rev'
+        description: ""

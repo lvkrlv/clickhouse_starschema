@@ -1,0 +1,6 @@
+[packages]
+dbt-core = "==1.0.4"
+dbt-clickhouse = "==1.0.4"
+
+[requires]
+python_version = "3.9"
