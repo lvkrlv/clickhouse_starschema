@@ -1,5 +1,5 @@
 
-- [ ] Deploy Clickhouse
+### 1. Deploy Clickhouse
 
 ```bash
 echo "Deploy Clickhouse"
@@ -20,12 +20,30 @@ yc managed-clickhouse cluster create \
 	--enable-sql-user-management \
 	--service-account aje3sljsuve3ic95f6fd \
 	--admin-password "$pswrd" 
-
 ```
 
-- [ ] Init dbt project
-- [ ] Install environment – dbt + clickhouse dependency
-- [ ] Configure project (dbt_project)
+### 2. Init dbt project
+
+```bash
+dbt init clickhouse_starschema
+```
+
+### 3. Install environment – dbt + clickhouse dependency
+
+[title](Pipfile)
+
+```txt
+[packages]
+dbt-core = "==1.0.4"
+dbt-clickhouse = "==1.0.4"
+
+[requires]
+python_version = "3.9"
+```
+
+### 4. Configure project (dbt_project)
+
+
 - [ ] Configure connection (profile)
 - [ ] Prepare source data files (S3)
 - [ ] Configure EXTERNAL TABLES (S3)
