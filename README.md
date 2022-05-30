@@ -30,7 +30,7 @@ dbt init clickhouse_starschema
 
 ### 3. Install environment – dbt + clickhouse dependency
 
-[title](Pipfile)
+[Pipfile](Pipfile)
 
 ```txt
 [packages]
@@ -42,6 +42,22 @@ python_version = "3.9"
 ```
 
 ### 4. Configure project (dbt_project)
+
+profiles.yml
+```yml
+clickhouse_starschema:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      schema: db1
+      host: c-c9qrd25fh0t8b9c3ul0u.rw.mdb.yandexcloud.net
+      port: 9440
+      user: admin
+      password: adminadmin
+      secure: True
+```
+
 
 
 - [ ] Configure connection (profile)
