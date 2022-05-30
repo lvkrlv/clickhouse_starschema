@@ -75,6 +75,8 @@ clickhouse_starschema:
 
 ### 6. Prepare source data files (S3)
 
+Scale 2 used.
+
 ```bash
 ssh yc-user@<host>
 
