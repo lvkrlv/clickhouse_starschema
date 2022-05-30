@@ -125,7 +125,7 @@ dbt debug
 ```
 ### 10. Prepare STAR schema
 
-[lineorder_flat](models/lineorder_flat.sql)
+[lineorder_flat](models/star/lineorder_flat.sql)
 
 > I've used [additional macro](macros/surrogate_key.sql) based on [dbt-utils surrogate_key one](https://github.com/dbt-labs/dbt-utils#surrogate_key-source) to generate surrogate and hash keys.
 
