@@ -66,10 +66,10 @@ clickhouse_starschema:
     dev:
       type: clickhouse
       schema: db1
-      host: c-c9qrd25fh0t8b9c3ul0u.rw.mdb.yandexcloud.net
+      host: c-<ID>.rw.mdb.yandexcloud.net
       port: 9440
-      user: admin
-      password: adminadmin
+      user: <user>
+      password: <password>
       secure: True
 ```
 
