@@ -145,6 +145,7 @@ Q4.2
 ```bash
 dbt test
 dbt docs generate
+dbt docs serve
 ```
 
 Added `dbt_utils.unique_combination_of_columns` test for `(LO_ORDERKEY, LO_LINENUMBER)` combination.
