@@ -1,15 +1,37 @@
-Welcome to your new dbt project!
 
-### Using the starter project
+- [ ] Deploy Clickhouse
 
-Try running the following commands:
-- dbt run
-- dbt test
+```bash
+echo "Deploy Clickhouse"
+read -s pswrd
 
+yc managed-clickhouse cluster create \
+	--name otus-clickhouse- \
+	--shard-name shard1 \
+	--environment production \
+	--network-name my-yc-network \
+    --host type=clickhouse,zone-id=ru-central1-b,subnet-name=my-yc-subnet-b \
+	--clickhouse-resource-preset s2.small \
+	--clickhouse-disk-size 20 \
+	--clickhouse-disk-type network-ssd \
+	--database name=db1 \
+	--datalens-access \
+	--version 22.5 \
+	--enable-sql-user-management \
+	--service-account aje3sljsuve3ic95f6fd \
+	--admin-password "$pswrd" 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+```
+
+- [ ] Init dbt project
+- [ ] Install environment – dbt + clickhouse dependency
+- [ ] Configure project (dbt_project)
+- [ ] Configure connection (profile)
+- [ ] Prepare source data files (S3)
+- [ ] Configure EXTERNAL TABLES (S3)
+- [ ] Describe sources in .yml files
+- [ ] Basic dbt models and configurations
+- [ ] Code compilation + debugging
+- [ ] Prepare STAR schema
+- [ ] Querying results
+- [ ] Testing & Documenting your project
