@@ -10,7 +10,7 @@ yc managed-clickhouse cluster create \
 	--shard-name shard1 \
 	--environment production \
 	--network-name my-yc-network \
-    --host type=clickhouse,zone-id=ru-central1-b,subnet-name=my-yc-subnet-b \
+	--host type=clickhouse,zone-id=ru-central1-b,subnet-name=my-yc-subnet-b \
 	--clickhouse-resource-preset s2.small \
 	--clickhouse-disk-size 20 \
 	--clickhouse-disk-type network-ssd \
