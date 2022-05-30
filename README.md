@@ -127,7 +127,7 @@ dbt debug
 
 [lineorder_flat](models/star/lineorder_flat.sql)
 
-> I've used [additional macro](macros/surrogate_key.sql) based on [dbt-utils surrogate_key one](https://github.com/dbt-labs/dbt-utils#surrogate_key-source) to generate surrogate and hash keys.
+> I've used [additional macro](macros/surrogate_key.sql) based on [dbt-utils surrogate_key](https://github.com/dbt-labs/dbt-utils#surrogate_key-source) one to generate surrogate and hash keys.
 
 ### 11. Querying results
 
