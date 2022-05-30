@@ -18,7 +18,7 @@ yc managed-clickhouse cluster create \
 	--datalens-access \
 	--version 22.5 \
 	--enable-sql-user-management \
-	--service-account aje3sljsuve3ic95f6fd \
+	--service-account <account_id> \
 	--admin-password "$pswrd" 
 ```
 
