@@ -3,7 +3,6 @@ version: 2
 sources:
 
     - name: ssb-dbgen
-      # database: db
       schema: db1
       tags: ["ssb-dbgen"]      
       loader: S3
